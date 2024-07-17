@@ -21,13 +21,13 @@ Pinch is a Python script that runs in the background on a Linux system (Ubuntu),
 
 1. **Clone the Repository:**
 
-   `git clone https://github.com/whymanthan/Pinch.git`
-   `cd pinch`
+   - `git clone https://github.com/whymanthan/Pinch.git`
+   - `cd pinch`
    
 2. **Install Required Packages:**
 
-   `sudo apt-get install xclip libnotify-bin`
-   `pip3 install pynput`
+   - `sudo apt-get install xclip libnotify-bin`
+   - `pip3 install pynput`
    
 3. **Make the Script Executable:**
    `chmod +x pinch.py`
