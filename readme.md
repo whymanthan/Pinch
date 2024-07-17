@@ -29,24 +29,24 @@ Pinch is a Python script that runs in the background on a Linux system (Ubuntu),
    `sudo apt-get install xclip libnotify-bin`
    `pip3 install pynput`
    
-3. **Make the Script Executable:
+3. **Make the Script Executable:**
    `chmod +x pinch.py`
    
-4. **Create a .desktop File for Startup:
+4. **Create a .desktop File for Startup:**
 
 - You can create a .desktop file specifically for the startup application.
   `nano ~/.config/autostart/pinch.desktop`
 
 - If the autostart directory does not exist, create it:
-   ```mkdir -p ~/.config/autostart```
+   `mkdir -p ~/.config/autostart`
 
 
-5. **Add the Following Content to pinch.desktop:
+5. **Add the Following Content to pinch.desktop:**
 
    `[Desktop Entry]`
    `Type=Application`
-   `#your_pinchfiledestination
-   `Exec=python3 ./
+   `#your_pinchfiledestination`
+   `Exec=python3 ./`
    `Hidden=false`
    `NoDisplay=false`
    `X-GNOME-Autostart-enabled=true`
@@ -55,10 +55,10 @@ Pinch is a Python script that runs in the background on a Linux system (Ubuntu),
 
 - Ensure the Exec line points to the correct path of your pinch.py script.
 
-6. **Save and Close the File:
+6. **Save and Close the File:**
 
 - Save the changes and close the text editor (Ctrl+O, Enter, Ctrl+X for nano).
 
-7. **Verify Startup Entry
+7. **Verify Startup Entry**
 
 - Reboot your system to ensure that the script runs on startup.
