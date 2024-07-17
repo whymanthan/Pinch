@@ -2,7 +2,7 @@ import subprocess
 from pynput import keyboard
 
 # File to which the text will be appended
-MARKDOWN_FILE = '/home/angy/Documents/Max/pinched.md'
+MARKDOWN_FILE = ''
 
 # Function to read the current selection using xclip
 def get_selection():
