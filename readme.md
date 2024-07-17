@@ -15,13 +15,13 @@ Pinch is a Python script that runs in the background on a Linux system (Ubuntu),
 - Python 3
 - `xclip`
 - `libnotify-bin`
-- `pynput` Python package
+- `pynput`
 
 ## Installation
 
 1. **Clone the Repository:**
 
-   `https://github.com/whymanthan/Pinch.git
+   `git clone https://github.com/whymanthan/Pinch.git`
    `cd pinch`
    
 2. **Install Required Packages:**
@@ -42,16 +42,17 @@ Pinch is a Python script that runs in the background on a Linux system (Ubuntu),
 
 
 5. **Add the Following Content to pinch.desktop:**
-
-   `[Desktop Entry]`
-   `Type=Application`
-   `#your_pinchfiledestination`
-   `Exec=python3 ./`
-   `Hidden=false`
-   `NoDisplay=false`
-   `X-GNOME-Autostart-enabled=true`
-   `Name=Pinch`
-   `Comment=Capture selected text and append to Markdown file`
+```
+[Desktop Entry]
+   Type=Application
+   #your_pinchfiledestination
+   Exec=python3 ./
+   Hidden=false
+   NoDisplay=false
+   X-GNOME-Autostart-enabled=true
+   Name=Pinch
+   Comment=Capture selected text and append to Markdown file
+```
 
 - Ensure the Exec line points to the correct path of your pinch.py script.
 
